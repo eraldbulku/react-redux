@@ -15,6 +15,16 @@ export function fetchPosts() {
         type: FETCH_POSTS,
         payload: request
     };
+
+    // redux thunk
+    /*return dispatch => {
+    	request.then(response => {
+    		dispatch({
+    			type: FETCH_POSTS,
+        		payload: request
+    		});
+    	});
+    };*/
 }
 
 export function createPost(values, callback) {
